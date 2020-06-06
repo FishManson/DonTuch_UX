@@ -6,6 +6,7 @@
 import cv2	# OpenCV
 import numpy as np
 import dlib # Face detection (need .dat file)
+# .dat file can be obtained from http://dlib.net/files/shape_predictor_68_face_landmarks.dat.bz2
 
 cap = cv2.VideoCapture(0)	# Video
 
