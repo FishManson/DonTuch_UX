@@ -8,7 +8,8 @@ import os
 import pyautogui	# GUI
 import cv2			# OpenCV
 import dlib			# Face detection (.dat file needed to run)
-import tkinter as tk 
+import tkinter as tk
+from tkinter import messagebox
 import time
 
 class Callibration:
@@ -50,6 +51,8 @@ class Callibration:
 										fill = "red", tag = "ball")
 
 	def perform_actions(self):
+		messagebox.showinfo(message = "Please follow the red circle with your eyes",
+							title = "CareInterface")
 		self.move_first_pos()
 		time.sleep(1)
 		for x in range(3):
